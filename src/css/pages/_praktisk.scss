@@ -1,0 +1,235 @@
+@import '../base/_typography.scss';
+
+.titel{
+    h2{
+        color: map-get($color, first);
+    }
+}
+.praktisk-banner{
+    display: flex;
+    justify-content: space-between;
+    .praktisk-banner-image{
+        width: 42vw;
+        height: auto;
+        margin-top: 210px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.ledelse{
+    background:  map-get($color, seventh);
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 8%;
+    padding-right: 8%;
+    .ledelse-info{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        .ledelse-container{
+            .ledelse-img-div{
+                width: 15vw;
+                height: auto;
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px !important;
+                }
+            }
+        }
+    }
+    .ledelse-text{
+        margin-top: 50px ;
+    }
+    strong{
+        font-weight: 500;
+    }  
+    .mail{
+        p{
+            font-size: 14px !important;
+        }
+    }
+  }
+
+  .hytter{
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 8%;
+    padding-right: 8%;
+    h1{
+        margin-bottom: 50px;
+    }
+      .hytter-flex{
+      display: flex;
+      justify-content: space-between;
+     }
+     .hytter-img{
+         width: 35vw;
+         height: auto;
+         img{
+             width: 100%;
+             height: auto;
+             border-radius: 10px;
+         }
+     }
+     .hytter-text{
+        width: 450px;
+     }
+  }
+
+  .marbek{
+    background:  map-get($color, seventh);
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 8%;
+    padding-right: 8%;
+    h1{
+        margin-bottom: 50px;
+    }
+    .markeb-flex{
+        display: flex;
+        justify-content: space-between;
+        .marbek-img{
+            width: 35vw;
+            height: auto;
+            
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+        .marbek-text{
+            width: 550px;
+        }
+    }
+  }
+
+  .kontingent{
+      display: flex;
+      flex-direction: column;
+      padding-top: 110px;
+      padding-bottom: 30px;
+      padding-left: 8%;
+      padding-right: 8%;
+      width: 750px;
+  }
+  
+
+  @media only screen and (max-width: 950px){
+    .praktisk-banner{
+        flex-direction: column !important;
+    } 
+    .praktisk-banner{
+        .home-banner-image{
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
+            width: 55vw;
+        }
+    }
+    .ledelse-info{
+        flex-direction: column;
+        align-items: flex-start;
+        .ledelse-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            
+        }
+    }
+    .ledelse-container{
+        margin-bottom: 50px;
+        .ledelse-img-div{
+            width: 30vw !important;
+            height: auto;
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px !important;
+            }
+        }
+    }
+
+    .hytter{
+        h1{
+            font-size: 30px;
+        }
+        .hytter-flex{
+            flex-direction: column;
+            .hytter-text{
+                width: 84vw;
+                margin-bottom: 50px;
+            }
+            .hytter-img{
+                width: 84vw;
+            }
+        }
+    }
+
+    .marbek{
+        .markeb-flex{
+            flex-direction: column-reverse;
+            .marbek-text{
+                width: 84vw;
+                margin-bottom: 50px;
+            }
+            .marbek-img{
+                width: 84vw;
+            }
+        }
+    }
+
+    .kontingent{
+        .kontingent-text{
+            width: 84vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .praktisk-banner{
+        .home-banner-image{
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
+            width: 65vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .praktisk-banner{
+        .home-banner-image{
+            margin-top: 57px !important;
+            margin-bottom: 50px !important;
+            width: 70vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .titel{
+        margin-top: 70px !important;
+    }
+    .praktisk-banner{
+        .home-banner-image{
+            margin-top: 50px !important;
+            margin-bottom: 100px !important;
+            width: 85vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .praktisk-banner{
+        .home-banner-image{
+            margin-top: 20px !important;
+            margin-bottom: 70px !important;
+            width: 80vw;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@import '../base/_typography.scss';
+@import '../layouts/footer.scss';
+@import '../layouts/navbar.scss';
+@import '../pages/home.scss';
+
+// button CSS for th whole site
+.btn{
+    background: $button-bg;
+    color: map-get($color, sixth);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px !important;
+    height: 60px !important;
+    font-size: 20px !important;
+}
+
+#call-to-action{
+    width: 280px !important;
+    height: 80px !important;
+    font-size: 30px !important;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 3px solid #263248;
+    color: map-get($color, first);
+}
+
+// Dark mode CSS
+#app{
+    &.theme-dark{
+            background: map-get($color, first) !important;
+            .btn:hover{
+                background: transparent;
+                border: 3px solid #DBDBA9;
+                color: map-get($color, third);
+            }
+            .log-in-btn:hover{
+                background: map-get($color, third);
+                color: map-get($color, first);
+            }
+            .navbar{
+                background: map-get($color, fifth);
+                .navbar-links{
+                    a{
+                        color: map-get($color, sixth);
+                    }
+                }
+            }
+            .log-in-btn{
+                color: map-get($color, third);
+                border: 3px solid map-get($color, third);
+            }
+            .titel{
+                    color: map-get($color, third) !important;
+                    h2{
+                        color:  map-get($color, sixth);
+                    }
+            }
+            .btn{
+                background: map-get($color, third);
+                color: map-get($color, first);
+            }
+            .afdelinger{
+                background: map-get($color, fifth);
+                color: map-get($color, third) !important;
+            }
+            .gallery {
+                background: map-get($color, fifth);
+                color: map-get($color, third) !important;
+            }
+            h1, h2{
+                color: map-get($color, third);
+            }
+            p{
+                color: map-get($color, sixth);
+            }
+            .ok-sponsor{
+                background: map-get($color, first) !important;
+            }
+            .footer{
+                background: #001a33;
+            }
+            .info{
+                background: map-get($color, fifth);
+            }
+            .afdeling-bg-color{
+                background: map-get($color, fifth);
+            }
+            .Kontakt{
+                background: map-get($color, fifth);
+            }
+            .Tilmelding{
+                background: map-get($color, fifth);
+            }
+            .ledelse{
+                background: map-get($color, fifth);
+            }
+            .marbek{
+                background: map-get($color, fifth);
+            }
+            .titel-praktisk{
+                h2{
+                color:  map-get($color, seventh);
+              }
+            }
+            .maps {
+                background: map-get($color, fifth);
+                color: map-get($color, third) !important;
+
+            }
+            .titel-afdelinger{
+                h2{
+                    color:  map-get($color, sixth);
+                }
+            }
+    }
+}
+
+// button CSS - responsive
+@media only screen and (max-width: 780px){
+    .btn{
+        width: 170px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+    }
+    
+    #call-to-action{
+        width: 200px !important;
+        height: 60px !important;
+        font-size: 25px !important;
+    }
+}
