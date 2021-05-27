@@ -1,0 +1,45 @@
+$color:(
+first: (#263248),
+second: (#A4BFDA),
+third: (#DBDBA9),
+fourth: (#626749),
+fifth: (#495470),
+sixth: (#EAEAEA),
+seventh: (#f7f7f7),
+);
+
+$primary-opacity: rgba(#A4BFDA, .2);
+$button-bg: #003466;
+
+h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+h2{
+    font-size: 25px;
+    line-height: 40px;
+    
+}
+h3{
+    font-size: 22px;
+}
+p{
+    font-size: 16px;
+    margin: 0;
+    font-weight: 300;
+    font-family: poppins;
+    line-height: 25.6px;
+}
+
+@media only screen and (max-width: 1250px){
+    p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 880px){
+    p{
+        font-size: 13px;
+    }
+}
+

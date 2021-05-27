@@ -1,0 +1,166 @@
+@import '../base/_typography.scss';
+
+
+.titel{
+    h1{
+        margin-bottom: 50px !important;
+    }
+    h2{
+        margin-bottom: 10px !important;
+    }
+}
+.blivSpejd-banner{
+    display: flex;
+    .home-banner-image{
+        width: 45vw;
+        height: auto;
+        margin-top: 190px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.Kontakt{
+    display: flex;
+    justify-content: space-between;
+    background:  map-get($color, seventh);
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 8%;
+    padding-right: 8%;
+    .kontakt-logo-img{
+        width: 20vw;
+        display: flex;
+        align-items: flex-end;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+}
+
+.spejderen{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 8%;
+    padding-right: 8%;
+    .spejderen-img{
+        width: 35vw;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+    .spejderen-text{
+        width: 600px;
+    }
+}
+
+.Tilmelding{
+    display: flex;
+    justify-content: space-between !important;
+    background:  map-get($color, seventh);
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 8%;
+    padding-right: 8%;
+    .Tilmelding-betaling{
+        width: 600px;
+    }
+    .Tilmelding-blanket{
+        width: 30vw;
+    }
+    .btn-div{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .blivSpejd-banner{
+        flex-direction: column-reverse;
+    } 
+    .blivSpejd-banner{
+        .home-banner-image{
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
+            width: 55vw;
+        }
+    }
+    .Kontakt{
+        flex-direction: column;
+        .kontakt-logo-img{
+            margin-top: 50px;
+            width: 50vw;
+        }
+    }
+    .spejderen{
+        flex-direction: column-reverse;
+        .spejderen-text{
+            width: 84vw;
+        }
+        .spejderen-img{
+            margin-top: 50px;
+            width: 84vw;
+        }
+    }
+    .Tilmelding{
+        flex-direction: column;
+        .Tilmelding-betaling{
+            width: 84vw;
+        }
+        .Tilmelding-blanket{
+            width: 84vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .blivSpejd-banner{
+        .home-banner-image{
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
+            width: 65vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .blivSpejd-banner{
+        .home-banner-image{
+            margin-top: 57px !important;
+            margin-bottom: 50px !important;
+            width: 70vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .titel{
+        margin-top: 70px !important;
+    }
+    .blivSpejd-banner{
+        .home-banner-image{
+            margin-top: 100px !important;
+            margin-bottom: 100px !important;
+            width: 85vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .blivSpejd-banner{
+        .home-banner-image{
+            margin-top: 100px !important;
+            margin-bottom: 70px !important;
+            width: 80vw;
+        }
+    }
+}

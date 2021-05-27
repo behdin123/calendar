@@ -1,0 +1,221 @@
+@import '../base/_typography.scss';
+.omGruppen-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.titel{
+    margin-right: 8%;
+    margin-top: 210px;
+    color: map-get($color, first);
+    h1{
+        font-weight: 900;
+        font-size: 50px !important;
+        margin-bottom: 40px !important;
+        letter-spacing: 0.4px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 37px;
+        margin-bottom: 10px !important;
+    }
+    
+}
+.omGruppen-banner-image{
+    width: 750px;
+    height: auto;
+    margin-top: 170px;
+    margin-bottom: 50px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.info{
+    padding-top: 110px !important;
+    padding-bottom: 110px !important;
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+    display: flex;
+    justify-content: space-between;
+    background:  map-get($color, seventh);
+    align-items: center;
+    h1{
+        margin-bottom: 20;
+    }
+    .info-img{
+        width: 550px;
+        height: auto;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        
+        }
+    }
+    .info-img-div {
+        display: flex;
+        justify-content: space-between !important;
+        width: 100%;
+    }
+    .info-text{
+        width: 600px;
+        padding-right: 50px;
+        width: 600px;
+    }
+    
+}
+
+.info2{
+    padding-top: 110px !important;
+    padding-bottom: 110px !important;
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        margin-bottom: 20;
+    }
+    .info2-img{
+        width: 550px;
+        height: auto;
+        img{
+            width: 100%;
+            height: 100%;
+        
+        }
+    }
+    .info2-img-div {
+        display: flex;
+        justify-content: space-between !important;
+        width: 100%;
+    }
+    .info2-text{
+        padding-left: 50px;
+        padding-right: 8px;
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1300px){
+    .omGruppen-banner{
+        .omGruppen-banner-image{
+            width: 50vw;
+        }
+        .titel{
+            margin-top: 110px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .omGruppen-banner{
+        flex-direction: column-reverse;
+        .omGruppen-banner-image{
+            width: 60vw;
+            margin-top: -105px;
+        }
+    }
+    .banner-image-div{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .info-img-div{
+        flex-direction: column;
+    }
+    .info2-img-div{
+        flex-direction: column-reverse;
+    }
+    .info2-text{
+        padding: 0 !important;
+        margin-bottom: 50px;
+        width: 84vw !important;
+    }
+    .info2-img{
+        width: 84vw !important;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .info-text{
+        padding: 0 !important;
+        margin-bottom: 50px;
+        width: 84vw !important;
+    }
+    .info-img{
+        width: 80vw !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .omGruppen-banner{
+        .omGruppen-banner-image{
+            width: 70vw;
+            margin-top: -40px;
+        }
+    }
+    .titel{
+        h1{
+            font-size: 40px !important;
+        }
+        h2{
+            font-size: 27px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .omGruppen-banner{
+        .omGruppen-banner-image{
+            width: 78vw;
+            margin-top: -30px;
+        }
+    }
+    .titel{
+        margin-top: 80px !important;
+        h1{
+            font-size: 35px !important;
+        }
+        h2{
+            font-size: 23px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .titel{
+        h1{
+            font-size: 32px !important;
+        }
+        h2{
+            font-size: 22px !important;
+        }
+    }
+    .omGruppen-banner{
+        .omGruppen-banner-image{
+            width: 84vw;
+            margin-top: 20px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .titel{
+        h1{
+            font-size: 27px !important;
+        }
+        h2{
+            font-size: 22px !important;
+        }
+    }
+    .omGruppen-banner{
+        .omGruppen-banner-image{
+            width: 88vw;
+            margin-top: 40px !important;
+        }
+    }
+}
+
